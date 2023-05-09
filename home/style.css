@@ -1,0 +1,542 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+
+body {
+    background: black;
+}
+
+body, h1, h2, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* "Mães também jogam! **Cabeçalho** */
+
+.cabecalho {
+    width: 100%;
+    margin: 0 auto;
+    background: black;
+}
+
+.home-bg {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* HEADER, MENU */
+
+.menu-background {
+    background: #4ca003;
+}
+
+.menu {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.menu-geral {
+    padding-top: 50px;
+}
+
+.search-bar-1 {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 900px;
+    height: 50px;
+    font-style: italic;
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    padding: 10px 0 10px 10px;
+    border-radius: 15px;
+    background: black;
+    color: #4ca003;
+    border: 0;
+    margin: 0 0 2px 40px;
+}
+
+.lupa {
+    stroke: #4ca003;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: -50px;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botoes-navegacao ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex: 1;
+}
+
+.botoes-menu-navegacao {
+    display: flex;
+    justify-content: space-around;
+}
+
+.style-navegacoes {
+	box-shadow: 3px 4px 0px 0px #56941f;
+	background: linear-gradient(to bottom, #000000 5%, #161516 100%);
+	background-color: #4ca003;
+	border-radius: 15px;
+	border: 3px solid #4ca003;
+	display: inline-block;
+	cursor: pointer;
+	color: #4ca003;
+	font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	padding: 7px 25px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #56941f;
+}
+.style-navegacoes:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+
+.search-bar::placeholder {
+    color: #4ca003;
+}
+
+.background-site {
+    background: linear-gradient(#000000, #232522);
+    padding-top: 50px;
+}
+
+.modal {
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.doisPrimeiros {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.doisPrimeiros h1 {
+    padding: 0 0 0 80px;
+}
+
+.modal-content p:hover {
+    color: #4ca003;
+}
+
+.modal-content {
+    background-color: black;
+    padding: 30px 24px;
+    gap: 20px;
+    width: 384px;
+    height: 384px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content input {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.modal-content button {
+    width: 250px;
+    height: 30px;
+    background: #4ca003;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.modal-content a {
+    text-decoration: none;
+    display: block;
+}
+
+.botao {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 3px 0 0 0;
+}
+
+.fa-solid, .fa-user {
+    margin: 3px 0 0 10px;
+    color: black;
+}
+
+.modal span {
+    float: right;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: #4ca003;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.modal span:hover {
+    background-color: black;
+    color: #4ca003;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+.modal h1 {
+    color: #4ca003;
+}
+
+.banner {
+    display: flex;
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 30px 0;
+}
+
+.banner a {
+    color: white;
+    font-size: 2.5em;
+}
+
+.banner i {
+    color: white;
+
+}
+
+#seta {
+    position: absolute;
+    padding: 20px;
+    box-shadow: 2px -2px 0 1px #ffffff inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(45deg);
+}
+
+#seta2 {
+    max-width: 100%;
+    position: absolute;
+    padding: 20px;
+    box-shadow: 2px -2px 0 1px #ffffff inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(225deg);
+}
+
+.img-home-oferta {
+    max-width: 100%;
+    flex: 1;
+}
+
+.container-item-home {
+    max-width: 1500px;
+    margin: 0 auto;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    background: rgba(255, 255, 255, 2%);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.color {
+    color: #4ca003;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.div-imagem {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.item a {
+    flex-wrap: wrap;
+    width: 300px;
+    text-transform: uppercase;
+    min-height: 84px;
+}
+
+.item span {
+    font-size: 1.5em;
+    color: white;
+}
+
+.item sup {
+    font-size: 0.5em;
+}
+
+.monitor-gamer-id {
+    color: white;
+}
+
+hr {
+    width: 1300px;
+}
+
+.ofertas {
+    display: flex;
+    max-width: 1300px;
+    align-items: center;
+    justify-content: start;
+    margin-left: 250px;
+    padding: 30px 0 0 0;
+}
+
+.ofertas p{
+    color: #4ca003;
+    font-size: 2em;
+}
+
+.item-1 {
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+.estrela {
+    font-size: 1.5em;
+    color: #fffb00;
+}
+
+.superinfo-bg {
+    background: black;
+    color: #4ca003;
+}
+
+.superinfo a {
+    color: #4ca003;
+}
+
+.superinfo p, .superinfo a {
+    margin: 0 10px 10px 10px;
+}
+
+.superinfo {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.corsair-k70{
+    margin-left: 20px;
+}
+
+.fallen-pantera {
+    width: 250px;
+}
+
+.informacoes-importantes {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    border-top: 4px  #4ca003;
+    padding: 10px;
+}
+
+.informacoes-importantes h1 {
+    font-size: 1.5em;
+    line-height: 150%;
+}
+
+.informacoes-importantes h2 {
+    font-size: 1em;
+    line-height: 150%;
+}
+
+.informacoes-importantes p, a {
+    font-size: 1em;
+    line-height: 150%;
+}
+
+.informacoes-importantes p {
+    font-weight: bold;
+}
+
+.footer {
+    background: rgb(0, 0, 0);
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.footer a, p, h1, h2{
+    color: white;
+}
+
+.trocas-devolucoes {
+    display: block;
+    gap: 50px;
+}
+
+.trocas-devolucoes a {
+    text-decoration: none;
+}
+
+.trocas-devolucoes p:hover {
+    color: #4ca003;
+}
+
+.telefone {
+    padding: 50px 0;
+}
+
+.telefone a {
+    text-decoration: none;
+}
+
+.telefone a:hover {
+    color:#4ca003;
+}
+
+.telefone i {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.direitos {
+    padding: 50px 0;
+}
+
+.redes {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.facebook {
+    width: 50px;
+    border: 3px solid #232522;
+    border-radius: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes a {
+    color: #4ca003;
+    font-size: 1.5em;
+}
+
+.facebook:hover {
+    background: #4ca003;
+}
+
+.facebook:hover a {
+    color: black;
+}
+
+.newsletter {
+    margin: 0;
+    padding: 0;
+}
+
+.newsletter h1 {
+    font-size: 2em;
+    color: white;
+    margin-top: -10px;
+}
+
+.newsletter p {
+    font-size: 1.2;
+    color: white;
+    padding: 10px 0;
+}
+
+.newsletter input {
+    font-size: 0.9;
+    color: #7c7c7c;
+    font-style: italic;
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    padding: 15px 0 15px 15px;
+    margin: 0px;
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    outline: none;
+}
+
+.newsletter button {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #4ca003;
+    color: white;
+    margin-bottom: 0;
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+    border: 0px;
+    padding: 0;
+    cursor: pointer;
+}

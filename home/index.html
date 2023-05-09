@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Desimoni E-Commerce</title>
+</head>
+<body>
+
+    <div class="cabecalho">
+        <img src="./home-bg.jpg" class="home-bg">
+    </div>
+
+    <header class="menu-background">
+        <div class="menu">
+            <div class="menu-logo">
+                <a href="./index.html"><img src="logo.png" width="200px" height="200px"></a>
+            </div>
+            <div class="menu-geral">
+                <div class="search-bar-container">
+                    <div class="search-bar-1">
+                        <input type="text" class="search-bar" placeholder="O que você está buscando?">
+                            <svg class="lupa" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                    <div class="carrinho">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="20.5" r="1"/><circle cx="18" cy="20.5" r="1"/><path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"/></svg></a>
+                    </div>
+                    <div class="login-modal">
+                        <div class="login-user">
+                            <a href="#" onclick="showModal()"><i class="fa-solid fa-user"></i></a>
+                            <div class="modal" id="modal">
+                                <div class="modal-content">
+                                    <div class="doisPrimeiros">
+                                        <h1 class="fazer-login">Fazer Login</h1>
+                                        <span onclick="hideModal()">&times;</span>
+                                    </div>
+                                    <input type="email" class="login" placeholder="Login">
+                                    <input type="password" class="login" placeholder="Senha">
+                                    <button class="botao"><a class="entrar">ENTRAR</a><i class="fa-solid fa-right-to-bracket"></i></button>
+                                    <a href="/e-commerce/home/login-register/index.html"><p>Não possui login? Registrar-se agora!</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="botoes-navegacao">
+                    <ul class="botoes-menu-navegacao">
+                        <li><a class="style-navegacoes"href="#menu-inicial">Menu</a></li>
+                        <li><a class="style-navegacoes"href="#pagina-inicial">Pagina Inicial</a></li>
+                        <li><a class="style-navegacoes"href="#lancamentos">Lançamentos</a></li>
+                        <li><a class="style-navegacoes"href="#periferico-gamer">Periférico Gamer</a></li>
+                        <li><a class="style-navegacoes"href="#pc-gamer">PC Gamer</a></li>
+                        <li><a class="style-navegacoes"href="#acessorios">Acessórios</a></li>
+                        <li><a class="style-navegacoes"href="#oferta-do-dia">Oferta do dia</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="background-site">
+        <div class="banner">
+            <a href="#"><i class="control fa-solid fa-chevron-left"></i></a>
+            <a href="##"><img src="banner.jpg" height="max" width="960" class="img-home-oferta"></a>
+            <a href="#"><i class="control1 fa-solid fa-chevron-right"></i></a>
+        </div>
+        <hr color="#4ca003">
+        <div class="ofertas">
+            <p>OFERTAS IMPERDÍVEIS <i class="fa-solid fa-fire color"></i></p>
+        </div>
+        <section class="container-item-home">
+            <div class="item 1">
+                <div class="div-imagem">
+                    <a href="./monitor-gamer/index.html" target="_blank"><img src="monitor-gamer.png" alt="img" class="monitor-gamer-img"></a>
+                </div>
+                <a class="monitor-gamer-id">MONITOR GAMER SAMSUNG ODYSSEY G32A, 24 POL VA, FHD, 1MS, 165HZ, FREESYNC</a>
+                <div class="estrela">
+                    <a class="fill-star-1">&#9733;</a>
+                    <a class="fill-star-2">&#9733;</a>
+                    <a class="fill-star-3">&#9733;</a>
+                    <a class="fill-star-4">&#9733;</a>
+                    <a class="outline-star-5">&#9734;</a>
+                </div>
+                <span><sup>R$</sup>1.599,99</span>
+            </div>
+            <div class="item 2">
+                <div class="div-imagem">
+                    <img src="fallen-pantera.webp" alt="img" class="fallen-pantera">
+                </div>
+                <a class="monitor-gamer-id">Mouse Gamer Fallen Pantera Eco Branco</a>
+                <div class="estrela">
+                    <a class="fill-star-1">&#9733;</a>
+                    <a class="fill-star-2">&#9733;</a>
+                    <a class="fill-star-3">&#9733;</a>
+                    <a class="fill-star-4">&#9733;</a>
+                    <a class="outline-star-5">&#9734;</a>
+                </div>
+                <span><sup>R$</sup>210,99</span>
+            </div>
+            <div class="item 3">
+                <div class="div-imagem">
+                    <img src="cloud-stinger-2.png" alt="img" class="cloud-stinger-2">
+                </div>
+                <a class="monitor-gamer-id">Headset Gamer HyperX Cloud II, Som Surround 7.1, Drivers 53mm, USB e P3, Preto e Vermelho - 4P5M0AA</a>
+                <div class="estrela">
+                    <a class="fill-star-1">&#9733;</a>
+                    <a class="fill-star-2">&#9733;</a>
+                    <a class="fill-star-3">&#9733;</a>
+                    <a class="fill-star-4">&#9733;</a>
+                    <a class="outline-star-5">&#9734;</a>
+                </div>
+                <span><sup>R$</sup>499,00</span>
+            </div>
+            <div class="item 4">
+                <div class="div-imagem">
+                    <img src="corsair-k70.png" alt="img" class="corsair-k70">
+                </div>
+                <a class="monitor-gamer-id">Teclado Mecânico Gamer Corsair K70 RGB TKL CHAMPION SERIES, Switch Cherry MX Speed, US, Preto - CH-9119014-NA</a>
+                <div class="estrela">
+                    <a class="fill-star-1">&#9733;</a>
+                    <a class="fill-star-2">&#9733;</a>
+                    <a class="fill-star-3">&#9733;</a>
+                    <a class="fill-star-4">&#9733;</a>
+                    <a class="outline-star-5">&#9734;</a>
+                </div>
+                <span><sup>R$</sup>799,99</span>
+            </div>
+        </section>
+        <hr color="#4ca003" class="hr1" style="width: 100%">
+    </div>
+    <footer class="footer">
+        <div class="informacoes-importantes">
+            <div class="sac">
+                <h1>Atendimento ao cliente</h1>
+                <h2>SAC (Serviço de Atendimento ao Consumidor)</h2>
+                <p>E-mail: <a>lucasdesimonimota@gmail.com</a></p>
+                <div class="telefone">
+                    <p>Whatsapp: <a href="https://wa.me/5511985792748" target="_blank">11 9.8579-2748 <i class="fa-brands fa-whatsapp"></i></a></p>
+                    <p>Telefone: <a href="tel:+551129373754">11 2937-3754 <i class="fa-solid fa-phone"></i></a></p>
+                </div>
+                <div class="horario">
+                    <h1>Horários de atendimento: </h1>
+                    <p>Seg a Sext: 09:00hs às 18:00hs</p>
+                    <p>Sábado, domingo e feriados: 12:00hs às 17:00hs</p>
+                </div>
+                <div class="redes">
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/lucas.desimoni.7" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div class="facebook">
+                    <a href="https://www.instagram.com/desimoni__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="facebook">
+                    <a target="_blank" href="https://twitter.com/ldesimoni7"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="trocas-devolucoes">
+                <h1>Informações importantes</h1>
+                <a href="#"><p>Trocas e Devoluções</p></a>
+                <a href="#"><p>Termos de Serviço</p></a>
+                <a href="#"><p>Políticas de Privacidade</p></a>
+            </div>
+
+            <div class="newsletter">
+                <h1>Nossa Newsletter</h1>
+                <p>Assine nossa newsletter e receba as melhores ofertas DE GRAÇA!</p>
+                <form action="newsletter-form">
+                    <input type="text" class="email" placeholder="Seu e-mail">
+                    <button class="botao-enviar" onclick="">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="direitos">
+            <p>© e-Desimoni | e-Desimoni LTDA. CNPJ: 45.803.410/0001-09. Av Júlio Preste 213 Guarulhos - SP</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
